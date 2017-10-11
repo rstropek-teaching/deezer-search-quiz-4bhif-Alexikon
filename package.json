@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files='*.html,*.js,*.css'"
+    "start": "browser-sync start --server --files='*.html,*.js,*.css'",
+    "build": "node ./node_modules/typescript/bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,8 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+  },
   "bugs": {
     "url": "https://github.com/rstropek-teaching/deezer-search-quiz-4bhif-Alexikon/issues"
   },
