@@ -22,7 +22,7 @@ window.onload = () => {
     while (resultBody.firstChild) {
       resultBody.removeChild(resultBody.firstChild);
     }
-
+    
     // Build XHR. Need details about XMLHttpRequest? Check
     // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
     const xhr = new XMLHttpRequest();
@@ -57,7 +57,7 @@ window.onload = () => {
 
     // Build URL
     // Quiz: Why do we use a proxy instead of directly accessing Deezer's search API?
-    let url = 'http://localhost:8080/https://api.deezer.com/search?q=' + filter.value;
+    let url = 'http://localhost:8081/https://api.deezer.com/search?q=' + filter.value;
 
     // Send request
     xhr.open('GET', url);
